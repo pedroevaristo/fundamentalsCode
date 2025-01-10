@@ -14,7 +14,12 @@ public class Animal {
 	}
 	
 	public void emitirSom() {
-		System.out.println("Este Animal emiti som");
+		System.out.println("Este Animal emitir som");
+	}
+	
+	public void voar() {
+		System.out.println("Esta ave está voando");
+		
 	}
 
 	public String getNome() {

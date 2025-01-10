@@ -9,6 +9,6 @@ public class Coelho extends Animal{
 	
 	@Override
 	public void emitirSom() {
-		System.out.println("O Coelho bate os pés. Característica única: "+);	}
+		System.out.println("O Coelho bate os pés.");	}
 	
 }
