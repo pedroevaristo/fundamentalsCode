@@ -12,7 +12,15 @@ public class Ave extends Animal {
 		
 		// TODO Auto-generated constructor stub
 	}
-
+	
+	@Override
+	public void emitirSom() {
+		if(getRaca().toLowerCase().contains("papagaio")) {
+			System.out.println("Papagaio fica cantando ou falando demais");
+		}else {
+			System.out.println("O pinguim ... o som parece de um chewbacca");
+		}
+	}
 	
 	public void voar() {
 		if(getRaca().toLowerCase().contains("papagaio")) {
