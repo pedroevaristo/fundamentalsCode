@@ -15,6 +15,12 @@ public class HerancaAnimal {
 		
 		bird.voar();
 		pinguim.voar();
+		
+		//testar o nível 3 de herança + polimorfismo
+		System.out.println(dog.getNome()+ "tem pelos ?" + dog.isTemPelos());
+		dog.amamentar();
+		
+		bird.amamentar();
 		//colocar uma lista com loop for para mostrar as informações
 	}
 }

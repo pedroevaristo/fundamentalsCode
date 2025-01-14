@@ -1,12 +1,12 @@
 package Poo.herancaAnimal;
 
-public class Ave extends Animal {
+public class Ave extends Mamifero {
 
 	private final Boolean voar;
 	private final String tipoDePena;
 
 	public Ave(String nome, String raca, int idade, String tipoDePena) {
-		super(nome, raca, idade);
+		super(nome, raca, idade, true);
 		this.voar = !raca.toLowerCase().contains("pinguim");
 		this.tipoDePena = tipoDePena;
 		
@@ -21,6 +21,11 @@ public class Ave extends Animal {
 			System.out.println("O pinguim ... o som parece de um chewbacca");
 		}
 	}
+	@Override
+	public void amamentar() {
+		System.out.println(getRaca()+" não amamenta");
+	}
+	
 	
 	public void voar() {
 		if(getRaca().toLowerCase().contains("papagaio")) {
@@ -33,6 +38,8 @@ public class Ave extends Animal {
 			
 		}
 	}
+	
+	
 	
 
 	public Boolean getVoar() {

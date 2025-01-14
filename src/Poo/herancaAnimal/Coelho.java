@@ -1,9 +1,9 @@
 package Poo.herancaAnimal;
 
-public class Coelho extends Animal{
+public class Coelho extends Mamifero{
 
 	public Coelho(String nome, String raca, int idade) {
-		super(nome, raca, idade);
+		super(nome, raca, idade, true);
 		// TODO Auto-generated constructor stub
 	}
 	
