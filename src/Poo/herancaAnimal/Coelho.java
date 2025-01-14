@@ -10,5 +10,8 @@ public class Coelho extends Mamifero{
 	@Override
 	public void emitirSom() {
 		System.out.println("O Coelho bate os pés.");	}
-	
+	@Override
+	public void amamentar() {
+		System.out.println(getRaca()+ " pode amamenta.");
+	}
 }

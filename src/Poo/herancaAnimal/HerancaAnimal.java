@@ -20,7 +20,7 @@ public class HerancaAnimal {
 		System.out.println(dog.getNome()+ "tem pelos ?" + dog.isTemPelos());
 		dog.amamentar();
 		
-		bird.amamentar();
+		bunny.amamentar();
 		//colocar uma lista com loop for para mostrar as informações
 	}
 }
