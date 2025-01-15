@@ -30,11 +30,11 @@ public class Ave extends Animal {
 	public void voar() {
 		if (getRaca().toLowerCase().contains("papagaio")) {
 
-			System.out.println((getVoar() ? "Sim " : "Não") + " pode voar");
+			System.out.println(getRaca()+" "+"pode"+(getVoar() ? " sim " : "não")+" voar");
 
 		} else if (getRaca().toLowerCase().contains("pinguim")) {
 
-			System.out.println((getVoar() ? "Sim" : "Não") + " pode voar");
+			System.out.println(getRaca()+" "+"pode"+(getVoar() ? " sim " : "não")+" voar");
 
 		}
 	}

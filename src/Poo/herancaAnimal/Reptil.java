@@ -9,12 +9,12 @@ public class Reptil extends Animal {
 		// TODO Auto-generated constructor stub
 	}
 	
-	protected void trocarPele() {
-		System.out.println("O reptil trocou de pele.");
+	public void trocarPele() {
+		System.out.println("O reptil trocou de pele.\n");
 	}
 	
-	protected void mover() {
-		System.out.println("A cobra rasteja.");
+	public void mover() {
+		System.out.println("Este reptil se move.\n");
 	}
 
 }

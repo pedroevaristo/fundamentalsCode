@@ -13,19 +13,24 @@ public class Animal {
 
 	}
 
-	protected void emitirSom() {
+	public void emitirSom() {
 		System.out.println("Este Animal emitir som");
 	}
 
-	protected void voar() {
+	public void voar() {
 		System.out.println("Esta ave está voando");
 
 	}
 
-	protected void mover() {
+	public void mover() {
 		System.out.println("Este animal se move");
 	}
 
+	protected void atualizarStatus() {
+		System.out.println("Status do animal atualizado");
+	}
+	
+	
 	public String getNome() {
 		return nome;
 	}
