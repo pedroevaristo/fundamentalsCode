@@ -16,5 +16,9 @@ public class Reptil extends Animal {
 	public void mover() {
 		System.out.println("Este reptil se move.\n");
 	}
-
+	
+	public String getTipoDeEscama() {
+        return tipoDeEscama;
+    }
+	
 }

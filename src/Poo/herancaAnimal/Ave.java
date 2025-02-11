@@ -1,6 +1,6 @@
 package Poo.herancaAnimal;
 
-public class Ave extends Animal {
+public class Ave extends Animal {//aqui é como eu tinha feito na primeira vez antes de pergunta se estaria certo de ser utilizado desta forma
 
 	private final Boolean voar;
 	private final String tipoDePena;
@@ -27,6 +27,7 @@ public class Ave extends Animal {
 		System.out.println("Esta ave voa para se mover. \n");
 	}
 
+	
 	public void voar() {
 		if (getRaca().toLowerCase().contains("papagaio")) {
 
@@ -39,6 +40,7 @@ public class Ave extends Animal {
 		}
 	}
 
+	
 	public Boolean getVoar() {
 		return voar;
 	}
