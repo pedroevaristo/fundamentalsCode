@@ -20,24 +20,10 @@ public class HerancaAnimal {
 																		// voar, String tipoDePena
 		Pinguim pinguim = new Pinguim("Hapy", "Pinguim-de-magalhães ", 2, "Impermeavéis");
 		Cavalo horse = new Cavalo("Dora", "Quarto de milha", 10);
+		Tartaruga turtle = new Tartaruga("Tucupi", "Jabuti", 6, "escamas córneas");
+		Cobra snake = new Cobra( "Jéssica", "Cascavel", 10, "escamas dorsais lisas e quilhadas");
 		
-		
-		
-		/*// emitirSom
-		dog.emitirSom();
-		cat.emitirSom();
-		bird.emitirSom();
-		horse.emitirSom();
 
-		// Voar
-		bird.voar();
-		pinguim.voar();
-		
-		// Mover
-		horse.mover();
-		cat.mover();
-		dog.mover();
-		bird.mover();*/
 
 		// testar o nível 3 de herança + polimorfismo
 		System.out.println(dog.getNome() + " tem pelos ? " + dog.isTemPelos());
@@ -59,14 +45,20 @@ public class HerancaAnimal {
 		animals.add(bird);
 		animals.add(pinguim);
 		animals.add(horse);
-		
-		for (Animal animal : animals) {
-			System.out.println("Este animal " + animal.getNome() +" Desta raça "+ animal.getRaca()+" ela se movimenta :");
-			animal.mover();
-			animal.emitirSom();
-		}
-		
-		// colocar uma lista com loop for para mostrar as informações
+		animals.add(turtle);
+		animals.add(snake);
 
+		
+		// colocar em uma lista com loop for para mostrar as informações
+		tiposDeLocomocaoAnimal(animals);
+	}
+	
+	
+	public static void tiposDeLocomocaoAnimal(List<Animal> animals) {
+		for (Animal animal : animals) {
+		System.out.println("Este animal " + animal.getNome() +" Desta raça "+ animal.getRaca()+" ela se movimenta :");
+		animal.mover();
+		animal.emitirSom();
+		}
 	}
 }
